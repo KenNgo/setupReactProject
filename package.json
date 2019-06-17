@@ -1,48 +1,42 @@
 {
-  "name": "setup",
-  "version": "1.0.0",
-  "description": "",
-  "bin": {},
-  "main": "main.js",
-  "dependencies": {},
-  "devDependencies": {
-    "babel-core": "~6.18.2",
-    "babel-loader": "~6.2.8",
-    "babel-preset-latest": "~6.16.0",
-    "babel-preset-react": "~6.16.0",
-    "css-loader": "~0.26.0",
-    "extract-text-webpack-plugin": "~1.0.1",
-    "node-sass": "~3.13.0",
-    "react": "~15.4.1",
-    "react-dom": "~15.4.1",
-    "react-hot-loader": "~3.0.0-beta.6",
-    "sass-loader": "~4.0.2",
-    "style-loader": "~0.13.1",
-    "webpack": "~1.13.3",
-    "webpack-dev-server": "~1.16.2"
+  "name": "rrss-todo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1"
   },
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js -p",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KenNgo/setupReactProject.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "react",
-    "babel",
-    "es2015",
-    "webpack",
-    "sass",
-    "es6",
-    "hello world kit",
-    "kit"
-  ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KenNgo/setupReactProject/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/KenNgo/setupReactProject#readme"
+  "devDependencies": {
+    "@material-ui/core": "^4.1.1",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-router": "^5.0.1",
+    "redux-thunk": "^2.3.0"
+  }
 }
